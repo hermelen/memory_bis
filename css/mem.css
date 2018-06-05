@@ -17,39 +17,23 @@ img{
   width: 50px;
 }
 
-
-
-
-
-
-/*
-.row_01{
-  border: 5px solid red;
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: white;
 }
-.row_02{
-  border: 5px solid blue;
+p{
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    margin-bottom: 2em;
+    text-align: center;
 }
-.row_03{
-  border: 5px solid black;
+footer{
+    color: white;
+    text-align: right;
+    margin-top: 3em;
 }
-.row_04{
-  border: 5px solid yellow;
-}
-.row_05{
-  border: 5px solid pink;
-}
-.row_06{
-  border: 5px solid purple;
-}
-.row_07{
-  border: 5px solid grey;
-}
-.row_08{
-  border: 5px solid white;
-}
-.row_09{
-  border: 5px solid orange;
-}
-.row_10{
-  border: 5px solid lightgrey;
-} */
