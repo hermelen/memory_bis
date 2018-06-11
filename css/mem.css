@@ -1,17 +1,51 @@
 body{
   background-color: green;
 }
-img.recto{
-  display: none;
-}
-section>div {
+div.card {
   display: inline-block;
   text-align: center;
+  position: relative;
+  width: 50px;
+  height: 70.2167px;
+  transform: rotateY(0deg);
+  transition-duration: 0.5s;
 }
+div.card.turned {
+  transform: rotateY(180deg);
+}
+img.recto{
+  left: 0;
+  transition-duration: 0.5s;
+  position: absolute;
+  z-index: 0;
+  transform: rotateY(180deg);
+}
+div.card.turned img.recto{
+  z-index: 1;
+}
+img.verso{
+  left: 0;
+  transition-duration: 0.5s;
+  position: absolute;
+  z-index: 1;
+  transform: rotateY(0deg);
+}
+div.card.turned img.verso{
+  z-index: 0;
+}
+section#score{
+  position: fixed;
+  background-color: white;
+  right: 10px;
+  padding: 1em;
+  border-radius: 5px;
+}
+
 section{
   clear: both;
   text-align: center;
 }
+
 
 img{
   width: 50px;
@@ -39,7 +73,6 @@ p{
     margin-top: 2em;
     text-align: center;
     font-weight: bold;
-    background-image:url(bouton-vert.png);
     background-size: cover;
     line-height: 2em;
     width: 1000px;
